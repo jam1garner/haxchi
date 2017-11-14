@@ -125,7 +125,7 @@ int availSort(const void *c1, const void *c2)
 
 void printhdr_noflip()
 {
-	println_noflip(0,"Amazon video hacks installer by jam1garner")
+	println_noflip(0,"Amazon video hacks installer by jam1garner");
 	println_noflip(1,"Huge thanks to FIX94 (Made Haxchi installer)");
 }
 

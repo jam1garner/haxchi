@@ -31,7 +31,7 @@ export OBJCOPY	:=	$(PREFIX)objcopy
 ifeq ($(CB),1)
 TARGET		:=	cbhc
 else
-TARGET		:=	haxchi
+TARGET		:=	amazonhacks_installer
 endif
 BUILD		:=	build
 BUILD_DBG	:=	$(TARGET)_dbg
@@ -149,9 +149,6 @@ $(CURDIR)/payload/arm_user_bin.h:
 clean:
 	@echo clean ...
 	@rm -fr $(BUILD) $(CURDIR)/*.elf $(CURDIR)/payload
-	@$(MAKE) --no-print-directory -C $(CURDIR)/arm_user -f  $(CURDIR)/arm_user/Makefile clean
-	@$(MAKE) --no-print-directory -C $(CURDIR)/../wupserver -f  $(CURDIR)/../wupserver/Makefile clean
-	@$(MAKE) --no-print-directory -C $(CURDIR)/arm_kernel -f  $(CURDIR)/arm_kernel/Makefile clean
 
 
 #---------------------------------------------------------------------------------

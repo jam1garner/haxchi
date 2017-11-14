@@ -1,3 +1,0 @@
-a=fw.img
-b=sysmenu
-default=wiiu/apps/homebrew_launcher/homebrew_launcher.elf
